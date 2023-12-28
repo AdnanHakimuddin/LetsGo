@@ -24,7 +24,7 @@ using Nop.Web.Framework.Mvc.Filters;
 namespace Nop.Web.Areas.Admin.Controllers
 {
     public partial class CountryController : BaseAdminController
-    {
+    { 
         #region Fields
 
         private readonly IAddressService _addressService;
