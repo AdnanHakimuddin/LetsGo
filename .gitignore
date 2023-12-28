@@ -1,0 +1,23 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Libraries/Nop.Core/bin/Debug/net7.0
+/Build
+/.vs
+/Libraries/Nop.Core/obj
+/Libraries/Nop.Data/bin/Debug/net7.0
+/Libraries/Nop.Data/obj
+/Libraries/Nop.Services/bin/Debug/net7.0
+/Libraries/Nop.Services/obj
+/Plugins
+/Presentation/Nop.Web/App_Data
+/Presentation/Nop.Web/bin/Debug/net7.0
+/Presentation/Nop.Web/obj
+/Presentation/Nop.Web/Plugins
+/Presentation/Nop.Web.Framework/bin/Debug/net7.0
+/Presentation/Nop.Web.Framework/obj
+*.md
+/.deployment
+/deploy.cmd
+/Deploying.Readme.txt
