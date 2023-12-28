@@ -1,0 +1,175 @@
+﻿@model RentalBookingModel
+
+<div class="card-body">
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="Name" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="FatherName" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="FatherName" />
+            <span asp-validation-for="FatherName"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="Cnic" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="Cnic" />
+            <span asp-validation-for="Cnic"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="DriverName" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="DriverName" />
+            <span asp-validation-for="DriverName"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="LicenceNumber" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="LicenceNumber" />
+            <span asp-validation-for="LicenceNumber"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="Make" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="Make" />
+            <span asp-validation-for="Make"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="CarColor" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="CarColor" />
+            <span asp-validation-for="CarColor"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="CarNumber" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="CarNumber" />
+            <span asp-validation-for="CarNumber"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="EngineNumber" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="EngineNumber" />
+            <span asp-validation-for="EngineNumber"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="ChassisNumber" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="ChassisNumber" />
+            <span asp-validation-for="ChassisNumber"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="BookingDate" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="BookingDate" />
+            <span asp-validation-for="BookingDate"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="ReturnDate" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="ReturnDate" />
+            <span asp-validation-for="ReturnDate"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="TotalCost" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="TotalCost" />
+            <span asp-validation-for="TotalCost"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="AdvanceCost" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="AdvanceCost" />
+            <span asp-validation-for="AdvanceCost"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="RemainingCost" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="RemainingCost" />
+            <span asp-validation-for="RemainingCost"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="KarachiTo" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="KarachiTo" />
+            <span asp-validation-for="KarachiTo"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="Address" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="Address" />
+            <span asp-validation-for="Address"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="PhoneNumber1" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="PhoneNumber1" />
+            <span asp-validation-for="PhoneNumber1"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-3">
+            <nop-label asp-for="PhoneNumber2" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="PhoneNumber2" />
+            <span asp-validation-for="PhoneNumber2"></span>
+        </div>
+    </div>
+</div>

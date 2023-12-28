@@ -1,0 +1,42 @@
+@model RentalBookingModel
+
+@using Nop.Core.Domain.Catalog
+
+@{
+    //page title
+    ViewBag.PageTitle = T("Admin.Catalog.RentalBookings.EditRentalBookingDetails").Text;
+    //active menu item (system name)
+    NopHtml.SetActiveMenuItemSystemName("RentalBookings");
+}
+
+<form asp-controller="RentalBooking" asp-action="Edit" method="post" id="rentalBooking-form">
+    <div class="content-header clearfix">
+        <h1 class="float-left">
+            @T("Admin.Catalog.RentalBookings.EditRentalBookingDetails") - @Model.Name
+            <small>
+                <i class="fas fa-arrow-circle-left"></i>
+                <a asp-action="List">@T("Admin.Catalog.RentalBookings.BackToList")</a>
+            </small>
+        </h1>
+        <div class="float-right">
+            <button type="submit" name="save" class="btn btn-primary">
+                <i class="far fa-save"></i>
+                @T("Admin.Common.Save")
+            </button>
+            <button type="submit" name="save-continue" class="btn btn-primary">
+                <i class="far fa-save"></i>
+                @T("Admin.Common.SaveContinue")
+            </button>
+            <span id="RentalBooking-delete" class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+                @T("Admin.Common.Delete")
+            </span>
+            <a asp-action="ExportXlsx">
+                <i class="far fa-file-excel"></i>
+                @T("Admin.Common.ExportToExcel")
+            </a>
+        </div>
+    </div>
+    @await Html.PartialAsync("_CreateOrUpdate", Model)
+</form>
+<nop-delete-confirmation asp-model-id="@Model.Id" asp-button-id="RentalBooking-delete" />
