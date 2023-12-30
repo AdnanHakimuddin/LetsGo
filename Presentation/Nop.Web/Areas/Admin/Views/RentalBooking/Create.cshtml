@@ -1,7 +1,7 @@
 @model RentalBookingModel
 @{
     //page title
-    ViewBag.PageTitle = T("Admin.Catalog.RentalBookings.AddNew").Text;
+    ViewBag.PageTitle = "Add New";
     //active menu item (system name)
     NopHtml.SetActiveMenuItemSystemName("RentalBookings");
 }
@@ -9,10 +9,10 @@
 <form asp-controller="RentalBooking" asp-action="Create" method="post" id="rentalBooking-form">
     <div class="content-header clearfix">
         <h1 class="float-left">
-            @T("Admin.Catalog.RentalBookings.AddNew")
+            Add New Rental Booking
             <small>
                 <i class="fas fa-arrow-circle-left"></i>
-                <a asp-action="List">@T("Admin.Catalog.RentalBookings.BackToList")</a>
+                <a asp-action="List">Back To List</a>
             </small>
         </h1>
         <div class="float-right">

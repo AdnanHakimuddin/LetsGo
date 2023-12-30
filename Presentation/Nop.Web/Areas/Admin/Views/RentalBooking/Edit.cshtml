@@ -4,7 +4,7 @@
 
 @{
     //page title
-    ViewBag.PageTitle = T("Admin.Catalog.RentalBookings.EditRentalBookingDetails").Text;
+    ViewBag.PageTitle = "Edit Rental Booking Details";
     //active menu item (system name)
     NopHtml.SetActiveMenuItemSystemName("RentalBookings");
 }
@@ -12,10 +12,10 @@
 <form asp-controller="RentalBooking" asp-action="Edit" method="post" id="rentalBooking-form">
     <div class="content-header clearfix">
         <h1 class="float-left">
-            @T("Admin.Catalog.RentalBookings.EditRentalBookingDetails") - @Model.Name
+            Edit Rental Booking Details - @Model.Name
             <small>
                 <i class="fas fa-arrow-circle-left"></i>
-                <a asp-action="List">@T("Admin.Catalog.RentalBookings.BackToList")</a>
+                <a asp-action="List">Back To List</a>
             </small>
         </h1>
         <div class="float-right">
@@ -31,10 +31,10 @@
                 <i class="far fa-trash-alt"></i>
                 @T("Admin.Common.Delete")
             </span>
-            <a asp-action="ExportXlsx">
+           @*  <a asp-action="ExportXlsx">
                 <i class="far fa-file-excel"></i>
                 @T("Admin.Common.ExportToExcel")
-            </a>
+            </a> *@
         </div>
     </div>
     @await Html.PartialAsync("_CreateOrUpdate", Model)

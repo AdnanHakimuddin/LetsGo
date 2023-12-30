@@ -2033,6 +2033,9 @@ namespace Nop.Web.Areas.Admin.Factories
                     var rentalBookingModel = rentalBooking.ToModel<RentalBookingModel>();
 
                     //convert dates to the user time
+                    rentalBookingModel.DateOfDepartue = await _dateTimeHelper.ConvertToUserTimeAsync(rentalBooking.DateOfDeparture, DateTimeKind.Utc);
+                    rentalBookingModel.BookingDate = await _dateTimeHelper.ConvertToUserTimeAsync(rentalBooking.BookingDate, DateTimeKind.Utc);
+                    rentalBookingModel.ProgrammeDate = await _dateTimeHelper.ConvertToUserTimeAsync(rentalBooking.ProgrammeDate, DateTimeKind.Utc);
                     rentalBookingModel.FormattedBookingDate = (await _dateTimeHelper.ConvertToUserTimeAsync(rentalBooking.CreatedOnUtc, DateTimeKind.Utc)).ToString("MM/dd/yyyy HH:mm:ss");
                     rentalBookingModel.FormattedReturnDate = (await _dateTimeHelper.ConvertToUserTimeAsync(rentalBooking.CreatedOnUtc, DateTimeKind.Utc)).ToString("MM/dd/yyyy HH:mm:ss");
                     rentalBookingModel.Address = rentalBooking.Address;

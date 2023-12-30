@@ -4,7 +4,7 @@
 
 @{
     //page title
-    ViewBag.PageTitle = T("Admin.Catalog.AdvanceBookings.EditRentalBookingDetails").Text;
+    ViewBag.PageTitle = "Edit Rental Booking Details";
     //active menu item (system name)
     NopHtml.SetActiveMenuItemSystemName("AdvanceBookings");
 }
@@ -12,10 +12,10 @@
 <form asp-controller="AdvanceBooking" asp-action="Edit" method="post" id="rentalBooking-form">
     <div class="content-header clearfix">
         <h1 class="float-left">
-            @T("Admin.Catalog.AdvanceBookings.EditRentalBookingDetails") - @Model.Name
+            Edit Rental Booking Details - @Model.Name
             <small>
                 <i class="fas fa-arrow-circle-left"></i>
-                <a asp-action="List">@T("Admin.Catalog.AdvanceBookings.BackToList")</a>
+                <a asp-action="List">Back To List</a>
             </small>
         </h1>
         <div class="float-right">

@@ -113,8 +113,9 @@ namespace Nop.Web.Areas.Admin.Controllers
                 var rentalBooking = model.ToEntity<RentalBooking>();
                 rentalBooking.CreatedOnUtc = DateTime.UtcNow;
                 rentalBooking.UpdatedOnUtc = DateTime.UtcNow;
-                rentalBooking.DateOfDeparture = (DateTime)_dateTimeHelper.ConvertToUtcTime(model.BookingDate);
-                rentalBooking.ProgrammeDate = (DateTime)_dateTimeHelper.ConvertToUtcTime(model.BookingDate);
+                rentalBooking.BookingDate = model.BookingDate;
+                rentalBooking.DateOfDeparture = model.DateOfDepartue;
+                rentalBooking.ProgrammeDate = model.BookingDate;
                 rentalBooking.CreatedById = _workContext.GetCurrentCustomerAsync().Id;
                 rentalBooking.BookingTypeId = (int)BookingEnum.AdvanceBooking;
                 await _orderService.InsertRentalBookingAsync(rentalBooking);

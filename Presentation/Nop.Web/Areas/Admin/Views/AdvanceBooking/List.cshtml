@@ -2,7 +2,7 @@
 
 @{
     //page title
-    ViewBag.PageTitle = T("Admin.Catalog.AdvanceBookings").Text;
+    ViewBag.PageTitle = "Advance Bookings";
     //active menu item (system name)
     NopHtml.SetActiveMenuItemSystemName("AdvanceBookings");
 }
@@ -14,7 +14,7 @@
 
 <div class="content-header clearfix">
     <h1 class="float-left">
-        @T("Admin.Catalog.AdvanceBookings")
+        Advance Bookings
     </h1>
     <div class="float-right">
         <a asp-action="Create" class="btn btn-primary">
@@ -42,7 +42,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group row">
                                         <div class="col-md-4">
-                                            <nop-label asp-for="Name" />
+                                            <div class="label-wrapper"><label class="col-form-label" for="Name">Name</label></div>
                                         </div>
                                         <div class="col-md-8">
                                             <nop-editor asp-for="Name" />
